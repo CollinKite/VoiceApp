@@ -12,7 +12,7 @@ key = os.getenv("xi-api-key")
 def GetVoiceOptions():
     #add api key to header
     headers = {
-        'x-api-key': key
+        'xi-api-key': key
     }
     response = requests.get('https://api.elevenlabs.io/v1/voices', headers=headers)
     
